@@ -1,0 +1,200 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background: #ffffff;
+    padding: 0px 10px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 15px;
+    font-weight: 300;
+}
+
+h1 #pair {
+    color: #de2784;
+}
+
+h1 #a {
+    color: #029baf;
+}
+
+h1 #dox {
+    color: #ffb200;
+}
+
+.main-container {
+    background: #7e838636;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 10px auto;
+    max-width: 1500px;
+    -webkit-box-shadow: 0px 0px 10px 1px lightgray inset;
+    -moz-box-shadow: 0px 0px 10px 1px lightgray inset;
+    box-shadow: 0px 0px 10px 1px lightgray inset;
+    main
+
+{
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 5fr;
+    grid-template-columns: 2fr 5fr;
+    padding: 20px;
+    justify-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.scoreboard {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    height: 60%;
+}
+
+.score {
+    margin-left: 10px;
+}
+
+.add-cards {
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+#inactive {
+    background-color: lightgray;
+    color: white;
+}
+
+#active {
+    cursor: pointer;
+    background-color: #de2784;
+    color: white;
+}
+
+#cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(100px, 150px) 5px minmax(100px, 150px) 5px minmax(100px, 150px) 5px minmax(100px, 150px);
+    grid-template-columns: repeat(4, minmax(100px, 150px));
+    grid-auto-rows: 1fr;
+    grid-gap: 25px 40px;
+}
+
+.card {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    list-style-type: none;
+    width: 90%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 10px 1px lightgray;
+    -moz-box-shadow: 0px 0px 10px 1px lightgray;
+    box-shadow: 0px 0px 10px 1px lightgray;
+}
+
+#cards::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+}
+
+#cards > *:first-child {
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+}
+
+.selected {
+    outline: 0.3rem solid lightgray;
+    outline-offset: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+}

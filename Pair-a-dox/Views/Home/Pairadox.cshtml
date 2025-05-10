@@ -1,0 +1,80 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Play Pair-a-dox";
+}
+<h1><span id="pair">Pair</span><span id="a">-a-</span><span id="dox">dox</span></h1>
+<div class="main-container">
+    <main>
+        <section class="scoreboard">
+            <div class="score-container">
+                Opponent1 Score:
+                <span class="score">0</span>
+            </div>
+            <div class="score-container">
+                Opponent2 Score:
+                <span class="score">0</span>
+            </div>
+            <div class="score-container">
+                Opponent3 Score:
+                <span class="score">0</span>
+            </div>
+            <div class="score-container">
+                Opponent4 Score:
+                <span class="score">0</span>
+            </div>
+            <div class="score-container">
+                Opponent5 Score:
+                <span class="score">0</span>
+            </div>
+            <div class="add-cards" id="inactive">
+                Add Cards
+            </div>
+            <div class="score-container">
+                Your Score:
+                <span class="score">0</span>
+            </div>
+        </section>
+        <ul id="cards">
+            <li class="card selected">
+                <img src="~/img/cards/1-single-pink-solid-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/2-single-pink-striped-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/3-single-pink-empty-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/4-double-pink-solid-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/5-double-pink-striped-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/6-double-pink-empty-cloud.jpg" />
+            </li>
+            <li class="card selected">
+                <img src="~/img/cards/7-triple-pink-solid-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/8-triple-pink-striped-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/9-triple-pink-empty-cloud.jpg" />
+            </li>
+            <li class="card selected">
+                <img src="~/img/cards/10-single-cyan-solid-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/11-single-cyan-striped-cloud.jpg" />
+            </li>
+            <li class="card">
+                <img src="~/img/cards/12-single-cyan-empty-cloud.jpg" />
+            </li>
+        </ul>
+    </main>
+</div>
+<script src="app.js"></script>
+

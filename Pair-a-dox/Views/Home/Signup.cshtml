@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Login";
+}
+<h1><span id="pair">Pair</span><span id="a">-a-</span><span id="dox">dox</span></h1>
+<main>
+    <!--
+    making two forms for sign-in and login
+    -->
+
+
+    <form action="/action_page.php" target="">
+        <div class="container">
+            <h3>
+                Create Your Account
+            </h3>
+            <p>Please fill the form to register your account!</p>
+            <hr />
+            <!--
+            refer to riot login for base
+            -->
+
+            <label for=""><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required />
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <hr />
+
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <!-- Terms and Privacy to be written -->
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+        <div class="container login">
+            <p>Already have an account? <a href="../Pair-a-dox/login.html">Log in</a>.</p>
+        </div>
+    </form>
+
+</main>
