@@ -1,3 +1,5 @@
+using System;
+
 namespace Pair_a_dox.Views
 {
     public class Program
@@ -8,6 +10,7 @@ namespace Pair_a_dox.Views
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            
 
             var app = builder.Build();
 
