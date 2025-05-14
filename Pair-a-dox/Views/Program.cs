@@ -1,4 +1,4 @@
-namespace Pair_a_dox
+namespace Pair_a_dox.Views
 {
     public class Program
     {
