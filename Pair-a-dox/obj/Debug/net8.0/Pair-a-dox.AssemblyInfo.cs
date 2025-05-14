@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pair-a-dox")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36503386c4509ffe4088c71a9f4ba169b936d4a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b36d59e70296a6e2d888d73b159978ce0b25f169")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pair-a-dox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pair-a-dox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
