@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "okz58PmunCr27Ss1e2K0bDxogJAjxoPxSMGEDr98Cv8=",
+  "Hash": "jolm0B1M8Vrmn+ObUnwdv8GeaNenIU5VbGWtcDIucy8=",
   "Source": "Pair-a-dox",
   "BasePath": "_content/Pair-a-dox",
   "Mode": "Default",
@@ -1630,25 +1630,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\PAIR-A-DOX LOGO.png",
-      "SourceId": "Pair-a-dox",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\",
-      "BasePath": "_content/Pair-a-dox",
-      "RelativePath": "img/PAIR-A-DOX LOGO.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\PAIR-A-DOX LOGO.png"
     },
     {
       "Identity": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\js\\site.js",
