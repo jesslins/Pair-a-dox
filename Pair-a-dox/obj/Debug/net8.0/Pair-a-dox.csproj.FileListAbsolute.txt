@@ -28,6 +28,7 @@ C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\D
 C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.pdb
 C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.genruntimeconfig.cache
 C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\ref\Pair-a-dox.dll
+<<<<<<< HEAD
 C:\Users\Abeeb\OneDrive\Documents\Wonderland\High School\mitt\grade 12\CapStone-12\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.csproj.AssemblyReference.cache
 C:\Users\Abeeb\OneDrive\Documents\Wonderland\High School\mitt\grade 12\CapStone-12\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Abeeb\OneDrive\Documents\Wonderland\High School\mitt\grade 12\CapStone-12\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.AssemblyInfoInputs.cache
@@ -164,3 +165,6 @@ C:\Users\Abeeb\OneDrive\Documents\Wonderland\High School\mitt\grade 12\CapStone-
 C:\Users\Abeeb\OneDrive\Documents\Wonderland\High School\mitt\grade 12\CapStone-12\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.csproj.CopyComplete
 C:\Users\Abeeb\OneDrive\Documents\Wonderland\High School\mitt\grade 12\CapStone-12\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.genruntimeconfig.cache
 C:\Users\Abeeb\OneDrive\Documents\Wonderland\High School\mitt\grade 12\CapStone-12\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\ref\Pair-a-dox.dll
+=======
+C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Debug\net8.0\Pair-a-dox.sourcelink.json
+>>>>>>> 34b20b09e061e859eaf0006b94a3892547145506
