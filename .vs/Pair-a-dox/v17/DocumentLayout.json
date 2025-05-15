@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|c:\\users\\jessi\\onedrive\\documents\\mitt\\visual studio\\pair-a-dox\\pair-a-dox\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|solutionrelative:pair-a-dox\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|c:\\users\\jessi\\onedrive\\documents\\mitt\\visual studio\\pair-a-dox\\pair-a-dox\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|solutionrelative:pair-a-dox\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|c:\\users\\jessi\\onedrive\\documents\\mitt\\visual studio\\pair-a-dox\\pair-a-dox\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|solutionrelative:pair-a-dox\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|c:\\users\\jessi\\onedrive\\documents\\mitt\\visual studio\\pair-a-dox\\pair-a-dox\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|solutionrelative:pair-a-dox\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB2FA46A-12C0-4916-8411-942402DED631}|Pair-a-dox\\Pair-a-dox.csproj|c:\\users\\jessi\\onedrive\\documents\\mitt\\visual studio\\pair-a-dox\\pair-a-dox\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "Pair-a-dox\\wwwroot\\js\\site.js",
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "Pair-a-dox\\Views\\Home\\Login.cshtml",
@@ -111,12 +111,11 @@
               "RelativeToolTip": "Pair-a-dox\\Views\\Home\\Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T17:29:46.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T17:29:46.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Pairadox.cshtml",
               "DocumentMoniker": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\Views\\Home\\Pairadox.cshtml",
               "RelativeDocumentMoniker": "Pair-a-dox\\Views\\Home\\Pairadox.cshtml",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "Pair-a-dox\\Views\\Home\\Pairadox.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAAC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T16:56:25.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T16:56:25.121Z"
             },
             {
               "$type": "Document",
@@ -141,19 +139,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Pair-a-dox\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Pair-a-dox\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-08T15:49:29.139Z"
+              "WhenOpened": "2025-05-08T15:49:29.139Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Pair-a-dox\\wwwroot\\css\\site.css",
@@ -161,8 +160,7 @@
               "RelativeToolTip": "Pair-a-dox\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAH0AAAAAAAAAAAAtwI0AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-10T17:02:11.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T17:02:11.215Z"
             },
             {
               "$type": "Document",

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\PAIR-A-DOX LOGO.png",
+      "PackagePath": "staticwebassets\\img\\PAIR-A-DOX LOGO.png"
+    },
+    {
       "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\1-single-pink-solid-cloud.jpg",
       "PackagePath": "staticwebassets\\img\\cards\\1-single-pink-solid-cloud.jpg"
     },
