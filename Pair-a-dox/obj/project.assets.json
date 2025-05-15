@@ -460,13 +460,13 @@
           "build/net8.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Proxies/9.0.5": {
+      "Microsoft.EntityFrameworkCore.Proxies/9.0.1": {
         "type": "package",
         "dependencies": {
           "Castle.Core": "5.1.1",
-          "Microsoft.EntityFrameworkCore": "9.0.5",
-          "Microsoft.Extensions.Caching.Memory": "9.0.5",
-          "Microsoft.Extensions.Logging": "9.0.5"
+          "Microsoft.EntityFrameworkCore": "9.0.1",
+          "Microsoft.Extensions.Caching.Memory": "9.0.1",
+          "Microsoft.Extensions.Logging": "9.0.1"
         },
         "compile": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
@@ -2124,10 +2124,10 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Proxies/9.0.5": {
-      "sha512": "Jg+bdXOGQAkww2TY4GCyiUY1PGkmiJo92nWLojVAkDC/AiWZmu8s0HIahef8b1E83RhV7aLXjUaQPxt09hnFUQ==",
+    "Microsoft.EntityFrameworkCore.Proxies/9.0.1": {
+      "sha512": "tCTAdaS1OPpY44R987tSQOD54Prtwaf6HPmbIjm8cq3qJ0R1w0Y/K2lWkvSIjT3U0zugKGXrbqvO0/bbYnhqHw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.proxies/9.0.5",
+      "path": "microsoft.entityframeworkcore.proxies/9.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2135,7 +2135,7 @@
         "PACKAGE.md",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll",
         "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.xml",
-        "microsoft.entityframeworkcore.proxies.9.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.proxies.9.0.1.nupkg.sha512",
         "microsoft.entityframeworkcore.proxies.nuspec"
       ]
     },
@@ -3026,7 +3026,7 @@
     "net8.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.5",
-      "Microsoft.EntityFrameworkCore.Proxies >= 9.0.5",
+      "Microsoft.EntityFrameworkCore.Proxies >= 9.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.5"
     ]
   },
@@ -3081,7 +3081,7 @@
           },
           "Microsoft.EntityFrameworkCore.Proxies": {
             "target": "Package",
-            "version": "[9.0.5, )"
+            "version": "[9.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -43,6 +43,18 @@ namespace Pair_a_dox.Controllers
 
             return Ok("User created successfully.");
         }
+
+        [HttpGet("all")]
+        public IActionResult GetAllUsers()
+        {
+            var users = _dbContext.Users.Select(u => new {
+                u.UserName,
+                u.Email
+                // Do not include PasswordHash
+            }).ToList();
+
+            return Ok(users);
+        }
     }
 
 }
