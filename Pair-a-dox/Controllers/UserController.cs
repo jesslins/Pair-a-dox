@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Linq;
-using BCrypt.Net; // Install BCrypt.Net-Next NuGet package
+using BCrypt.Net; 
 using System;
 using Pair_a_dox.Models;
 
@@ -42,6 +42,25 @@ namespace Pair_a_dox.Controllers
             _dbContext.SaveChanges();
 
             return Ok("User created successfully.");
+        }
+
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] LoginUserDto dto)
+        {
+            var user = _dbContext.Users.SingleOrDefault(u => u.Email == dto.Email);
+            if (user == null)
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+
+            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
+            if (!isPasswordValid)
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+
+            // Authentication successful
+            return Ok("Login successful.");
         }
 
         [HttpGet("all")]
