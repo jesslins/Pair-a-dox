@@ -1,7 +1,0 @@
-C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Release\net8.0\PubTmp\Out\Pair-a-dox.exe
-C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
-C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Release\net8.0\PubTmp\Out\appsettings.json
-C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Release\net8.0\PubTmp\Out\Pair-a-dox.dll
-C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Release\net8.0\PubTmp\Out\Pair-a-dox.deps.json
-C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Release\net8.0\PubTmp\Out\Pair-a-dox.runtimeconfig.json
-C:\Users\Jessi\OneDrive\Documents\MITT\Visual Studio\Pair-a-dox\Pair-a-dox\obj\Release\net8.0\PubTmp\Out\Pair-a-dox.pdb
