@@ -5,9 +5,16 @@ namespace Pair_a_dox.Models
 {
     public class User
     {
+        private int _id;
         private string _username;
         private string _passwordHash;
         private string _email;
+
+        public int Id 
+        { 
+            get { return _id; } 
+            set { _id = value; } 
+        }
 
         [Required]
         public string UserName

@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
 using System;
 
-namespace Pair_a_dox.Views
+namespace Pair_a_dox
 {
     public class Program
     {
@@ -10,7 +12,12 @@ namespace Pair_a_dox.Views
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            
+            builder.Services.AddControllers();
+            //to link the sqlite server shit
+            builder.Services.AddDbContext<UserDbContext>(options =>
+                options.UseSqlite("Data Source=app.db"));
+
+
 
             var app = builder.Build();
 
