@@ -11,7 +11,7 @@
     -->
 
 
-    <form action="/action_page.php" target="">
+    <form action="/action_page.php" target="" onsubmit="return login(event)">
         <div class="container">
             <h2>
                 Login
@@ -35,5 +35,41 @@
             <p>Don't have an account? <a href="../Pair-a-dox/signup.html">Sign up</a>.</p>
         </div>
     </form>
+
+    <script>
+        async function login(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("psw").value;
+
+            try {
+                const response = await fetch("/users/login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        email,
+                        password
+                    })
+                });
+
+                const result = await response.text();
+
+                if (response.ok) {
+                    alert("You are logged in, get ready to dox!!");
+                    // Redirect to the main application page
+                    window.location.href = "../Pair-a-dox/Pairadox.cshtml";
+                } else {
+                    alert("Error: " + result);
+                }
+            } catch (error) {
+                alert("Error: " + error.message);
+            }
+
+            return false; // Prevent form submission
+        }
+    </script>
 
 </main>
