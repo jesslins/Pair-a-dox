@@ -1,0 +1,593 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pair-a-dox.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Pair-a-dox.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\PAIR-A-DOX LOGO.png",
+      "PackagePath": "staticwebassets\\img\\PAIR-A-DOX LOGO.png"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\1-single-pink-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\1-single-pink-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\10-single-cyan-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\10-single-cyan-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\11-single-cyan-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\11-single-cyan-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\12-single-cyan-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\12-single-cyan-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\13-double-cyan-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\13-double-cyan-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\14-double-cyan-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\14-double-cyan-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\15-double-cyan-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\15-double-cyan-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\16-triple-cyan-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\16-triple-cyan-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\17-triple-cyan-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\17-triple-cyan-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\18-triple-cyan-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\18-triple-cyan-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\19-single-yellow-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\19-single-yellow-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\2-single-pink-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\2-single-pink-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\20-single-yellow-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\20-single-yellow-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\21-single-yellow-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\21-single-yellow-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\22-double-yellow-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\22-double-yellow-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\23-double-yellow-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\23-double-yellow-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\24-double-yellow-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\24-double-yellow-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\25-triple-yellow-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\25-triple-yellow-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\26-triple-yellow-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\26-triple-yellow-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\27-triple-yellow-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\27-triple-yellow-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\28-single-pink-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\28-single-pink-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\29-single-pink-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\29-single-pink-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\3-single-pink-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\3-single-pink-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\30-single-pink-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\30-single-pink-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\31-double-pink-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\31-double-pink-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\32-double-pink-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\32-double-pink-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\33-double-pink-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\33-double-pink-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\34-triple-pink-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\34-triple-pink-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\35-triple-pink-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\35-triple-pink-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\36-triple-pink-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\36-triple-pink-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\37-single-cyan-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\37-single-cyan-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\38-single-cyan-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\38-single-cyan-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\39-single-cyan-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\39-single-cyan-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\4-double-pink-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\4-double-pink-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\40-double-cyan-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\40-double-cyan-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\41-double-cyan-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\41-double-cyan-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\42-double-cyan-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\42-double-cyan-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\43-triple-cyan-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\43-triple-cyan-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\44-triple-cyan-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\44-triple-cyan-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\45-triple-cyan-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\45-triple-cyan-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\46-single-yellow-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\46-single-yellow-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\47-single-yellow-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\47-single-yellow-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\48-single-yellow-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\48-single-yellow-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\49-double-yellow-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\49-double-yellow-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\5-double-pink-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\5-double-pink-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\50-double-yellow-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\50-double-yellow-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\51-double-yellow-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\51-double-yellow-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\52-triple-yellow-solid-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\52-triple-yellow-solid-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\53-triple-yellow-striped-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\53-triple-yellow-striped-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\54-triple-yellow-empty-heart.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\54-triple-yellow-empty-heart.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\55-single-pink-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\55-single-pink-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\56-single-pink-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\56-single-pink-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\57-single-pink-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\57-single-pink-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\58-double-pink-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\58-double-pink-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\59-double-pink-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\59-double-pink-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\6-double-pink-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\6-double-pink-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\60-double-pink-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\60-double-pink-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\61-triple-pink-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\61-triple-pink-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\62-triple-pink-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\62-triple-pink-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\63-triple-pink-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\63-triple-pink-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\64-single-cyan-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\64-single-cyan-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\65-single-cyan-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\65-single-cyan-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\66-single-cyan-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\66-single-cyan-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\67-double-cyan-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\67-double-cyan-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\68-double-cyan-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\68-double-cyan-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\69-double-cyan-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\69-double-cyan-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\7-triple-pink-solid-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\7-triple-pink-solid-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\70-triple-cyan-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\70-triple-cyan-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\71-triple-cyan-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\71-triple-cyan-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\72-triple-cyan-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\72-triple-cyan-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\73-single-yellow-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\73-single-yellow-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\74-single-yellow-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\74-single-yellow-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\75-single-yellow-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\75-single-yellow-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\76-double-yellow-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\76-double-yellow-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\77-double-yellow-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\77-double-yellow-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\78-double-yellow-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\78-double-yellow-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\79-triple-yellow-solid-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\79-triple-yellow-solid-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\8-triple-pink-striped-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\8-triple-pink-striped-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\80-triple-yellow-striped-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\80-triple-yellow-striped-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\81-triple-yellow-empty-star.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\81-triple-yellow-empty-star.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\cards\\9-triple-pink-empty-cloud.jpg",
+      "PackagePath": "staticwebassets\\img\\cards\\9-triple-pink-empty-cloud.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual Studio\\Pair-a-dox\\Pair-a-dox\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pair-a-dox.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pair-a-dox.props",
+      "PackagePath": "build\\Pair-a-dox.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pair-a-dox.props",
+      "PackagePath": "buildMultiTargeting\\Pair-a-dox.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pair-a-dox.props",
+      "PackagePath": "buildTransitive\\Pair-a-dox.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
