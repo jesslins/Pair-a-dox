@@ -11,8 +11,8 @@
     -->
 
 
-    <form action="/action_page.php" target="">
-        <div class="container">
+    <form action="/action_page.php" target="" onsubmit="return register(event)">
+        <div class="container"> 
             <h3>
                 Create Your Account
             </h3>
@@ -46,4 +46,47 @@
         </div>
     </form>
 
+    <script>
+        async function register() {
+            event.preventDefault(); // stop the form from doing a normal submit
+
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("psw").value;
+            const repeatPassword = document.getElementById("psw-repeat").value;
+
+            if (password !== repeatPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            try {
+                const response = await fetch("/users/register", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        username,
+                        password,
+                        email
+                    })
+                });
+
+                const result = await response.text();
+
+                if (response.ok) {
+                    alert("You are registered, ready to dox?! (lol)");
+                    // optionally redirect to login page
+                    window.location.href = "../Pair-a-dox/Pairadox.cshtml";
+                } else {
+                    alert("Error: " + result);
+                }
+            } catch (error) {
+                alert("Error: " + error.message);
+            }
+
+            return false; // prevent form submission
+        }
+    </script>
 </main>

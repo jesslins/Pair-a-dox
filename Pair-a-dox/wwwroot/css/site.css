@@ -60,13 +60,14 @@ h1 #dox {
     align-items: center;
     padding: 40px 0;
     margin: 10px auto;
-    max-width: 1500px;
     -webkit-box-shadow: 0px 0px 10px 1px lightgray inset;
     -moz-box-shadow: 0px 0px 10px 1px lightgray inset;
     box-shadow: 0px 0px 10px 1px lightgray inset;
-    main
+    overflow-x: visible;
+    width: 100%;
+}
 
-{
+.main-container main {
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -79,6 +80,8 @@ h1 #dox {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    overflow-x: visible;
+    width: auto;
 }
 
 .scoreboard {
@@ -104,14 +107,14 @@ h1 #dox {
     align-items: center;
     text-align: center;
     font-size: 2rem;
-    height: 60%;
+    height: 75%;
 }
 
 .score {
     margin-left: 10px;
 }
 
-.add-cards {
+.button {
     font-weight: bold;
     padding: 1rem 0.5rem;
     -webkit-border-radius: 10px;
@@ -120,25 +123,27 @@ h1 #dox {
     font-size: 1.5rem;
 }
 
-#inactive {
+.inactive {
     background-color: lightgray;
     color: white;
 }
 
-#active {
+.active {
     cursor: pointer;
     background-color: #de2784;
     color: white;
 }
 
 #cards {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: minmax(100px, 150px) 5px minmax(100px, 150px) 5px minmax(100px, 150px) 5px minmax(100px, 150px);
-    grid-template-columns: repeat(4, minmax(100px, 150px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     grid-auto-rows: 1fr;
     grid-gap: 25px 40px;
+    width: auto; /* allow width to grow */
+    max-width: 100%; /* but don’t overflow viewport */
+    transition: all 0.3s ease; /* smooth size changes */
 }
+
 
 .card {
     display: -webkit-box;
@@ -196,5 +201,4 @@ img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-}
 }

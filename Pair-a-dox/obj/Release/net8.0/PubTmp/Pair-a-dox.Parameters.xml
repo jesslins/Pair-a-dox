@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="Pair-a-dox" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Jessi\\OneDrive\\Documents\\MITT\\Visual\ Studio\\Pair-a-dox\\Pair-a-dox\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>
