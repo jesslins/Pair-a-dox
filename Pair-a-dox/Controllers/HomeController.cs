@@ -32,7 +32,11 @@ namespace Pair_a_dox.Controllers
             return View();
         }
 
-        public IActionResult Pairadox()
+        public IActionResult SinglePairadox()
+        {
+            return View();
+        }
+        public IActionResult MultiPairadox()
         {
             return View();
         }
