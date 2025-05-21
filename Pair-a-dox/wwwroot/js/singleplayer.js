@@ -126,11 +126,14 @@ function deactivateAddCardsButton() {
 }
 
 function startAddCardsTimer() {
+    const cardsCount = cardsContainer.children.length;
     clearTimeout(addCardsTimeout);
     deactivateAddCardsButton();
-    addCardsTimeout = setTimeout(() => {
-        activateAddCardsButton();
-    }, 1000); // 1 minute
+    if (cardsCount < 21) {
+        addCardsTimeout = setTimeout(() => {
+            activateAddCardsButton();
+        }, 1000); // 1 minute
+    }
 }
 
 function updateCardBoardLayout() {
