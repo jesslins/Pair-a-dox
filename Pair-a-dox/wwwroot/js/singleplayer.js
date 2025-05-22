@@ -126,11 +126,14 @@ function deactivateAddCardsButton() {
 }
 
 function startAddCardsTimer() {
+    const cardsCount = cardsContainer.children.length;
     clearTimeout(addCardsTimeout);
     deactivateAddCardsButton();
-    addCardsTimeout = setTimeout(() => {
-        activateAddCardsButton();
-    }, 1000); // 1 minute
+    if (cardsCount < 21) {
+        addCardsTimeout = setTimeout(() => {
+            activateAddCardsButton();
+        }, 1000); // 1 minute
+    }
 }
 
 function updateCardBoardLayout() {
@@ -172,10 +175,12 @@ function addThreeCardsToBoard() {
     const cardsToAdd = deck.splice(0, 3);
 
     const currentChildren = Array.from(cardsContainer.children);
-    const rowLength = cardsInPlay.length / 3;
+    const columns = currentColumns; // use the actual current column count
+    const rows = Math.ceil(cardsInPlay.length / columns);
 
     cardsToAdd.forEach((card, i) => {
-        const insertIndex = (i + 1) * rowLength + i;
+        const row = i;
+        const insertIndex = Math.min((row + 1) * columns + i, currentChildren.length);
 
         cardsInPlay.splice(insertIndex, 0, card);
 
@@ -192,9 +197,10 @@ function addThreeCardsToBoard() {
     });
 
     updateCardBoardLayout();
-
     updateGridColumns();
 }
+
+
 
 
 
