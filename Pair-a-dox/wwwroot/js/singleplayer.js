@@ -125,13 +125,16 @@
         addCardsButton.classList.add('inactive');
     }
 
-    function startAddCardsTimer() {
-        clearTimeout(addCardsTimeout);
-        deactivateAddCardsButton();
+function startAddCardsTimer() {
+    const cardsCount = cardsContainer.children.length;
+    clearTimeout(addCardsTimeout);
+    deactivateAddCardsButton();
+    if (cardsCount < 21) {
         addCardsTimeout = setTimeout(() => {
             activateAddCardsButton();
         }, 1000); // 1 minute
     }
+}
 
     function updateCardBoardLayout() {
         const cardsContainer = document.getElementById('cards');
@@ -171,11 +174,11 @@
         if (deck.length === 0) return;
         const cardsToAdd = deck.splice(0, 3);
 
-        const currentChildren = Array.from(cardsContainer.children);
-        const rowLength = cardsInPlay.length / 3;
+    const currentChildren = Array.from(cardsContainer.children);
+    const rowLength = cardsInPlay.length / 3;
 
-        cardsToAdd.forEach((card, i) => {
-            const insertIndex = (i + 1) * rowLength + i;
+    cardsToAdd.forEach((card, i) => {
+        const insertIndex = (i + 1) * rowLength + i;
 
             cardsInPlay.splice(insertIndex, 0, card);
 
@@ -191,16 +194,16 @@
             }
         });
 
-        updateCardBoardLayout();
+    updateCardBoardLayout();
 
-        updateGridColumns();
-    }
+    updateGridColumns();
+}
 
 
 
-    // ========== 7. Dox Mode ==========
-    function enterDoxMode() {
-        if (isDoxMode) return;
+// ========== 7. Dox Mode ==========
+function enterDoxMode() {
+    if (isDoxMode) return;
 
         isDoxMode = true;
         selectedCards = [];
@@ -291,7 +294,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         scoreBoard = document.getElementById('playerScore');
 
-        renderInitialCards();
-        startAddCardsTimer();
-        updateScoreBoard();
-    });
+    renderInitialCards();
+    startAddCardsTimer();
+    updateScoreBoard();
+});
