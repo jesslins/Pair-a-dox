@@ -1,5 +1,12 @@
-﻿const socket = io('https://pairadoxserver.azurewebsites.net', {
-    transports: ['websocket']
+﻿let playerName = '';
+
+promptForName();
+
+const socket = io('https://pairadoxserver.azurewebsites.net', {
+    transports: ['websocket'],
+    auth: {
+        playerName,
+    }
 });
 
 // === Card Attributes ===
@@ -46,6 +53,7 @@ let socketIdReady = false;
 let pendingGameState = null;
 let hasVoted = false;
 let isVoteOngoing = false;
+let playerNames = {};
 
 
 // === Socket Events ===
@@ -63,6 +71,8 @@ socket.on('gameState', (data) => {
         pendingGameState = data;
         return;
     }
+
+    playerNames = data.playerNames || {};
 
     handleGameState(data);
 
@@ -120,6 +130,14 @@ document.addEventListener('DOMContentLoaded', () => {
     startAddCardsTimer();
     updateScoreBoard();
 });
+
+function promptForName() {
+    playerName = prompt("Enter your display name:", "Player");
+    if (!playerName || playerName.trim() === '') {
+        playerName = "Player";
+    }
+    playerName = playerName.trim();
+}
 
 function renderInitialCards() {
     cardsInPlay = deck.splice(0, 12);
@@ -283,15 +301,15 @@ function updateScoreBoard() {
 }
 
 function updateOrAddOpponentScore(socketId, score) {
-    console.log(`updateOrAddOpponentScore called for socketId: ${ socketId } with score: ${ score }`);
-
     if (!playerScores[socketId]) {
         const scoreboard = document.getElementById('scoreboard');
         const container = document.createElement('div');
         container.className = 'score-container';
 
-        const opponentNumber = Object.keys(playerScores).length + 1;
-        container.innerHTML = `Opponent${opponentNumber} Score: <span class="score" id="score-${socketId}">0</span>`;
+        // Use player name if exists, fallback to "Opponent #"
+        const name = playerNames[socketId] || `Opponent ${Object.keys(playerScores).length + 1}`;
+
+        container.innerHTML = `${name} Score: <span class="score" id="score-${socketId}">0</span>`;
 
         scoreboard.appendChild(container);
         playerScores[socketId] = container.querySelector('span');
