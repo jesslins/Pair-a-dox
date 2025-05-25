@@ -27,6 +27,12 @@ deck = deck.sort(() => Math.random() - 0.5);
 const cardsContainer = document.getElementById('cards');
 const addCardsButton = document.getElementById('addCards');
 const doxButton = document.querySelector('#dox.button');
+const addCardsVoteModal = document.getElementById('addCardsVoteModal');
+const voteYesBtn = document.getElementById('voteYes');
+const voteNoBtn = document.getElementById('voteNo');
+const voteCancelBtn = document.getElementById('voteCancel');
+const voteStatus = document.getElementById('voteStatus');
+const playerScores = {} // { socketId: scoreSpanElement }
 let cardsInPlay = [];
 let selectedCards = [];
 let isDoxMode = false;
@@ -36,40 +42,42 @@ let points = 0;
 let scoreBoard;
 let currentColumns = 4;
 let currentScale = 1;
+let socketIdReady = false;
+let pendingGameState = null;
+let hasVoted = false;
+let isVoteOngoing = false;
+
 
 // === Socket Events ===
-socket.on('connect', () => console.log('Connected to server'));
-socket.on('gameState', ({ cardsInPlay: newCardsInPlay, pointsByPlayer }) => {
-    // Update local cardsInPlay with the authoritative server state
-    cardsInPlay = newCardsInPlay;
+socket.on('connect', () => {
+    console.log('Connected to server');
+    socketIdReady = true;
 
-    // Re-render the cards on the board from the updated cardsInPlay
-    cardsContainer.innerHTML = '';
-    cardsInPlay.forEach(renderCard);
-    updateGridColumns();
-    updateCardBoardLayout();
-
-    // Update your local points from pointsByPlayer using your socket id
-    if (pointsByPlayer && socket.id in pointsByPlayer) {
-        points = pointsByPlayer[socket.id];
-        updateScoreBoard();
+    if (pendingGameState) {
+        handleGameState(pendingGameState);
+        pendingGameState = null;
+    }
+});
+socket.on('gameState', (data) => {
+    if (!socketIdReady) {
+        pendingGameState = data;
+        return;
     }
 
-    // Clear selection since game state changed
-    selectedCards = [];
-    updateCardSelectionUI();
-    exitDoxMode();
+    handleGameState(data);
+
+    if (data.canAddCards) {
+        activateAddCardsButton();
+    } else {
+        deactivateAddCardsButton();
+    }
 });
 socket.on('setResult', ({ success, message }) => {
     console.log('setResult received:', success, message);
     if (success) {
-        points++;
         replaceCards(selectedCards);
-    } else {
-        points--;
     }
 
-    updateScoreBoard();
     selectedCards = [];
     updateCardSelectionUI();
     exitDoxMode();
@@ -77,6 +85,32 @@ socket.on('setResult', ({ success, message }) => {
 
     // Optional: show feedback
     console.log(message);
+});
+socket.on('addCardsRequestEnabled', () => {
+    activateAddCardsButton();
+});
+socket.on('addCardsRequestDisabled', () => {
+    deactivateAddCardsButton();
+});
+socket.on('addCardsVoteUpdate', ({ votesCount, totalPlayers }) => {
+    voteStatus.textContent = `Votes: YES ${votesCount.yes} / NO ${votesCount.no} (Total players: ${totalPlayers})`;
+});
+socket.on('addCardsVoteStarted', () => {
+    isVoteOngoing = true;
+    deactivateAddCardsButton();
+    addCardsVoteModal.style.display = 'flex';
+});
+
+socket.on('addCardsApproved', () => {
+    isVoteOngoing = false;
+    hasVoted = false;
+    addCardsVoteModal.style.display = 'none';
+});
+
+socket.on('addCardsRejected', () => {
+    isVoteOngoing = false;
+    hasVoted = false;
+    addCardsVoteModal.style.display = 'none';
 });
 
 // === Initialization ===
@@ -104,22 +138,39 @@ function renderCard(card) {
 
 function updateGridColumns() {
     const columns = cardsInPlay.length / 3;
-    cardsContainer.style.gridTemplateColumns = `repeat(${columns}, minmax(100px, 150px))`;
+    cardsContainer.style.gridTemplateColumns = `repeat(${ columns }, minmax(100px, 150px))`;
 }
 
 function updateCardBoardLayout() {
+    const cardsContainer = document.getElementById('cards');
+    const mainLayout = document.getElementById('main-layout');
     const cardsCount = cardsContainer.children.length;
+
+    // Set columns count based on cards count and currentColumns
+    // You can customize these thresholds
     if (cardsCount <= 12) {
-        currentColumns = 4; currentScale = 1;
+        currentColumns = 4;   // 3 rows x 4 columns
+        currentScale = 1;
+        mainLayout.style.gridTemplateColumns = '28% 72%';
     } else if (cardsCount <= 15) {
-        currentColumns = 5; currentScale = 0.95;
+        currentColumns = 5;   // 3 rows x 5 columns
+        currentScale = 0.97;
+        mainLayout.style.gridTemplateColumns = '19% 81%';
     } else if (cardsCount <= 18) {
-        currentColumns = 6; currentScale = 0.9;
+        currentColumns = 6;   // 3 rows x 6 columns
+        currentScale = 0.94;
+        mainLayout.style.gridTemplateColumns = '19% 81%';
     } else {
-        currentColumns = Math.ceil(cardsCount / 3); currentScale = 0.85;
+        currentColumns = Math.ceil(cardsCount / 3); // general fallback
+        currentScale = 0.91;
+        mainLayout.style.gridTemplateColumns = '19% 81%';
     }
-    cardsContainer.style.gridTemplateColumns = `repeat(${currentColumns}, minmax(100px, 150px))`;
-    cardsContainer.style.transform = `scaleY(${currentScale})`;
+
+    // Apply CSS grid columns
+    cardsContainer.style.gridTemplateColumns = `repeat(${ currentColumns }, minmax(100px, 150px))`;
+
+    // Apply vertical scale
+    cardsContainer.style.transform = `scale(${ currentScale })`;
 }
 
 function getCardAttributes(cardElement) {
@@ -231,6 +282,55 @@ function updateScoreBoard() {
     if (scoreBoard) scoreBoard.innerText = points.toString();
 }
 
+function updateOrAddOpponentScore(socketId, score) {
+    console.log(`updateOrAddOpponentScore called for socketId: ${ socketId } with score: ${ score }`);
+
+    if (!playerScores[socketId]) {
+        const scoreboard = document.getElementById('scoreboard');
+        const container = document.createElement('div');
+        container.className = 'score-container';
+
+        const opponentNumber = Object.keys(playerScores).length + 1;
+        container.innerHTML = `Opponent${opponentNumber} Score: <span class="score" id="score-${socketId}">0</span>`;
+
+        scoreboard.appendChild(container);
+        playerScores[socketId] = container.querySelector('span');
+    }
+
+    playerScores[socketId].innerText = score;
+}
+
+function handleGameState({ cardsInPlay: newCardsInPlay, pointsByPlayer }) {
+    console.log('Handling game state update', newCardsInPlay, pointsByPlayer);
+    cardsInPlay = newCardsInPlay;
+    cardsContainer.innerHTML = '';
+    cardsInPlay.forEach(renderCard);
+    updateGridColumns();
+    updateCardBoardLayout();
+
+    Object.entries(pointsByPlayer).forEach(([socketId, score]) => {
+        if (socketId === socket.id) {
+            points = score;
+            updateScoreBoard();
+        } else {
+            updateOrAddOpponentScore(socketId, score);
+        }
+    });
+
+    for (const socketId of Object.keys(playerScores)) {
+        if (!(socketId in pointsByPlayer)) {
+            const container = playerScores[socketId].parentElement;
+            container.remove();
+            delete playerScores[socketId];
+        }
+    }
+
+    selectedCards = [];
+    updateCardSelectionUI();
+    exitDoxMode();
+}
+
+
 // === Event Listeners ===
 cardsContainer.addEventListener('click', e => {
     const card = e.target.closest('.card');
@@ -251,10 +351,22 @@ cardsContainer.addEventListener('click', e => {
 });
 
 addCardsButton.addEventListener('click', () => {
-    if (!addCardsButton.classList.contains('active')) return;
-    addThreeCardsToBoard();
-    deactivateAddCardsButton();
-    startAddCardsTimer();
+    if (!addCardsButton.classList.contains('active') || isVoteOngoing) return;
+    socket.emit('requestAddCardsVote');
 });
 
 doxButton.addEventListener('click', enterDoxMode);
+
+voteYesBtn.addEventListener('click', () => {
+    if (hasVoted) return;
+    socket.emit('submitAddCardsVote', { vote: 'yes' });
+    voteStatus.textContent = 'You voted YES. Waiting for others...';
+    hasVoted = true;
+});
+
+voteNoBtn.addEventListener('click', () => {
+    if (hasVoted) return;
+    socket.emit('submitAddCardsVote', { vote: 'no' });
+    voteStatus.textContent = 'You voted NO. Waiting for others...';
+    hasVoted = true;
+});
