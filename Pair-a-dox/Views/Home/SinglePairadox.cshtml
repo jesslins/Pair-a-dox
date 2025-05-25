@@ -5,38 +5,20 @@
     ViewData["Title"] = "Play Pair-a-dox";
 }
 <h1><span id="pair">Pair</span><span id="a">-a-</span><span id="dox">dox</span></h1>
+<section class="scoreboard">
+    <div class="score-container">
+        Your Score:
+        <span id="playerScore" class="score"></span>
+    </div>
+</section>
 <div class="main-container">
-    <main>
-        <section class="scoreboard">
-            <div class="score-container">
-                Opponent1 Score:
-                <span class="score">0</span>
-            </div>
-            <div class="score-container">
-                Opponent2 Score:
-                <span class="score">0</span>
-            </div>
-            <div class="score-container">
-                Opponent3 Score:
-                <span class="score">0</span>
-            </div>
-            <div class="score-container">
-                Opponent4 Score:
-                <span class="score">0</span>
-            </div>
-            <div class="score-container">
-                Opponent5 Score:
-                <span class="score">0</span>
-            </div>
+    <main id="main-layout">
+        <section class="button-container">
             <div id="addCards" class="button inactive">
                 Add Cards
             </div>
             <div id="dox" class="button active">
                 Dox!
-            </div>
-            <div class="score-container">
-                Your Score:
-                <span id="playerScore" class="score"></span>
             </div>
         </section>
         <ul id="cards">
