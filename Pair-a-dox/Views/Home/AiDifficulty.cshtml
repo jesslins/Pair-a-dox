@@ -9,6 +9,8 @@
     <!--
     make login
     -->
+ 
+
 
 
     <form action="/action_page.php" target="">
@@ -23,7 +25,21 @@
         </div>
 
         <div class="container choices">
+
+            <label for="aiDifficulty">AI Difficulty:</label>
+            <select id="aiDifficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
         </div>
     </form>
 
 </main>
+
+@section Scripts {
+    <!-- AiDifficulty.js must come before singleplayer.js -->
+    <script src="/js/AiDifficulty.js"></script>
+    <script src="/js/singleplayer.js"></script>
+
+}

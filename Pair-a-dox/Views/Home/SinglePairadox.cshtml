@@ -28,5 +28,8 @@
 </div>
 
 @section Scripts {
-    <script src="~/js/singleplayer.js" asp-append-version="true"></script>
+    <!-- AiDifficulty.js must come before singleplayer.js -->
+    <script src="/js/AiDifficulty.js"></script>
+    <script src="/js/singleplayer.js"></script>
+
 }
