@@ -2,7 +2,7 @@
 
 promptForName();
 
-const socket = io('https://pairadoxserver.azurewebsites.net', {
+const socket = io('https://pair-a-doxserver.azurewebsites.net', {
     transports: ['websocket'],
     auth: {
         playerName,
