@@ -136,32 +136,33 @@ function startAddCardsTimer() {
     }
 }
 
-    function updateCardBoardLayout() {
-        const cardsContainer = document.getElementById('cards');
-        const cardsCount = cardsContainer.children.length;
+function updateCardBoardLayout() {
+    const cardsContainer = document.getElementById('cards');
+    const mainLayout = document.getElementById('main-layout');
+    const cardsCount = cardsContainer.children.length;
 
-        // Set columns count based on cards count and currentColumns
-        // You can customize these thresholds
-        if (cardsCount <= 12) {
-            currentColumns = 4;   // 3 rows x 4 columns
-            currentScale = 1;
-        } else if (cardsCount <= 15) {
-            currentColumns = 5;   // 3 rows x 5 columns
-            currentScale = 0.95;
-        } else if (cardsCount <= 18) {
-            currentColumns = 6;   // 3 rows x 6 columns
-            currentScale = 0.9;
-        } else {
-            currentColumns = Math.ceil(cardsCount / 3); // general fallback
-            currentScale = 0.85;
-        }
+    // Set columns count based on cards count and currentColumns
+    // You can customize these thresholds
+    if (cardsCount <= 12) {
+        currentColumns = 4;   // 3 rows x 4 columns
+        currentScale = 1;
+    } else if (cardsCount <= 15) {
+        currentColumns = 5;   // 3 rows x 5 columns
+        currentScale = 0.95;
+    } else if (cardsCount <= 18) {
+        currentColumns = 6;   // 3 rows x 6 columns
+        currentScale = 0.9;
+    } else {
+        currentColumns = Math.ceil(cardsCount / 3); // general fallback
+        currentScale = 0.85;
+    }
 
         // Apply CSS grid columns
         cardsContainer.style.gridTemplateColumns = `repeat(${currentColumns}, minmax(100px, 150px))`;
 
-        // Apply vertical scale
-        cardsContainer.style.transform = `scaleY(${currentScale})`;
-    }
+    // Apply vertical scale
+    cardsContainer.style.transform = `scaleY(${currentScale})`;
+}
 
 
 

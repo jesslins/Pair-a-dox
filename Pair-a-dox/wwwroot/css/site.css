@@ -58,7 +58,7 @@ h1 #dox {
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 20px 0;
     margin: 10px auto;
     -webkit-box-shadow: 0px 0px 10px 1px lightgray inset;
     -moz-box-shadow: 0px 0px 10px 1px lightgray inset;
@@ -71,20 +71,52 @@ h1 #dox {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr 5fr;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns:24% 76%;
     padding: 20px;
-    justify-items: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     overflow-x: visible;
-    width: auto;
+    width: 100%;
 }
 
 .scoreboard {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 75%;
+}
+
+.score {
+    margin-left: 10px;
+}
+
+#player-score-container {
+    color: #de2784;
+}
+
+.button-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -107,11 +139,8 @@ h1 #dox {
     align-items: center;
     text-align: center;
     font-size: 2rem;
-    height: 75%;
-}
-
-.score {
-    margin-left: 10px;
+    height: 40%;
+    justify-self: flex-end;
 }
 
 .button {
@@ -138,10 +167,15 @@ h1 #dox {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     grid-auto-rows: 1fr;
-    grid-gap: 25px 40px;
+    grid-gap: 15px 0;
+    place-items: center;
     width: auto; /* allow width to grow */
     max-width: 100%; /* but don’t overflow viewport */
     transition: all 0.3s ease; /* smooth size changes */
+    padding: 0;
+    margin: 0;
+    margin-left: 3rem;
+    justify-self: flex-start;
 }
 
 
@@ -166,7 +200,7 @@ h1 #dox {
     border-radius: 5px;
     cursor: pointer;
     list-style-type: none;
-    width: 90%;
+    width: 65%;
     background-color: white;
     -webkit-box-shadow: 0px 0px 10px 1px lightgray;
     -moz-box-shadow: 0px 0px 10px 1px lightgray;
@@ -201,4 +235,29 @@ img {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+#voteButtons button {
+    margin: 10px;
 }
