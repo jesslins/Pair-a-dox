@@ -2,7 +2,7 @@
 
 promptForName();
 
-const socket = io('https://pairadoxserver.azurewebsites.net', {
+const socket = io('https://pair-a-doxserver.azurewebsites.net', {
     transports: ['websocket'],
     auth: {
         playerName,
@@ -90,8 +90,6 @@ socket.on('setResult', ({ success, message }) => {
 
     selectedCards = [];
     updateCardSelectionUI();
-    exitDoxMode();
-    startAddCardsTimer();
 
     // Optional: show feedback
     console.log(message);
@@ -127,7 +125,6 @@ socket.on('addCardsRejected', () => {
 document.addEventListener('DOMContentLoaded', () => {
     scoreBoard = document.getElementById('playerScore');
     renderInitialCards();
-    startAddCardsTimer();
     updateScoreBoard();
 });
 
@@ -228,12 +225,6 @@ function activateAddCardsButton() {
 function deactivateAddCardsButton() {
     addCardsButton.classList.remove('active');
     addCardsButton.classList.add('inactive');
-}
-
-function startAddCardsTimer() {
-    clearTimeout(addCardsTimeout);
-    deactivateAddCardsButton();
-    addCardsTimeout = setTimeout(activateAddCardsButton, 1000);
 }
 
 function addThreeCardsToBoard() {
