@@ -126,15 +126,19 @@ function deactivateAddCardsButton() {
 }
 
 function startAddCardsTimer() {
+    const cardsCount = cardsContainer.children.length;
     clearTimeout(addCardsTimeout);
     deactivateAddCardsButton();
-    addCardsTimeout = setTimeout(() => {
-        activateAddCardsButton();
-    }, 1000); // 1 minute
+    if (cardsCount < 21) {
+        addCardsTimeout = setTimeout(() => {
+            activateAddCardsButton();
+        }, 1000); // 1 minute
+    }
 }
 
 function updateCardBoardLayout() {
     const cardsContainer = document.getElementById('cards');
+    const mainLayout = document.getElementById('main-layout');
     const cardsCount = cardsContainer.children.length;
 
     // Set columns count based on cards count and currentColumns
@@ -142,22 +146,26 @@ function updateCardBoardLayout() {
     if (cardsCount <= 12) {
         currentColumns = 4;   // 3 rows x 4 columns
         currentScale = 1;
+        mainLayout.style.gridTemplateColumns = '28% 72%';
     } else if (cardsCount <= 15) {
         currentColumns = 5;   // 3 rows x 5 columns
-        currentScale = 0.95;
+        currentScale = 0.97;
+        mainLayout.style.gridTemplateColumns = '19% 81%';
     } else if (cardsCount <= 18) {
         currentColumns = 6;   // 3 rows x 6 columns
-        currentScale = 0.9;
+        currentScale = 0.94;
+        mainLayout.style.gridTemplateColumns = '19% 81%';
     } else {
         currentColumns = Math.ceil(cardsCount / 3); // general fallback
-        currentScale = 0.85;
+        currentScale = 0.91;
+        mainLayout.style.gridTemplateColumns = '19% 81%';
     }
 
     // Apply CSS grid columns
     cardsContainer.style.gridTemplateColumns = `repeat(${currentColumns}, minmax(100px, 150px))`;
 
     // Apply vertical scale
-    cardsContainer.style.transform = `scaleY(${currentScale})`;
+    cardsContainer.style.transform = `scale(${currentScale})`;
 }
 
 
@@ -172,10 +180,12 @@ function addThreeCardsToBoard() {
     const cardsToAdd = deck.splice(0, 3);
 
     const currentChildren = Array.from(cardsContainer.children);
-    const rowLength = cardsInPlay.length / 3;
+    const columns = currentColumns; // use the actual current column count
+    const rows = Math.ceil(cardsInPlay.length / columns);
 
     cardsToAdd.forEach((card, i) => {
-        const insertIndex = (i + 1) * rowLength + i;
+        const row = i;
+        const insertIndex = Math.min((row + 1) * columns + i, currentChildren.length);
 
         cardsInPlay.splice(insertIndex, 0, card);
 
@@ -192,9 +202,10 @@ function addThreeCardsToBoard() {
     });
 
     updateCardBoardLayout();
-
     updateGridColumns();
 }
+
+
 
 
 
