@@ -9,27 +9,6 @@ const socket = io('https://pair-a-doxserver.azurewebsites.net', {
     }
 });
 
-// === Card Attributes ===
-const counts = ['single', 'double', 'triple'];
-const colors = ['pink', 'cyan', 'yellow'];
-const shadings = ['solid', 'striped', 'empty'];
-const shapes = ['cloud', 'heart', 'star'];
-
-let deck = [];
-let currentId = 1;
-
-for (let shape of shapes) {
-    for (let color of colors) {
-        for (let count of counts) {
-            for (let shading of shadings) {
-                deck.push({ id: currentId++, count, color, shading, shape });
-            }
-        }
-    }
-}
-
-deck = deck.sort(() => Math.random() - 0.5);
-
 // === DOM and State ===
 const cardsContainer = document.getElementById('cards');
 const addCardsButton = document.getElementById('addCards');
@@ -39,7 +18,8 @@ const voteYesBtn = document.getElementById('voteYes');
 const voteNoBtn = document.getElementById('voteNo');
 const voteCancelBtn = document.getElementById('voteCancel');
 const voteStatus = document.getElementById('voteStatus');
-const playerScores = {} // { socketId: scoreSpanElement }
+const startNewGameBtn = document.getElementById('startNewGameBtn');
+const playerScores = {}
 let cardsInPlay = [];
 let selectedCards = [];
 let isDoxMode = false;
@@ -81,6 +61,11 @@ socket.on('gameState', (data) => {
     } else {
         deactivateAddCardsButton();
     }
+    if (data.canStartNewGame) {
+        activateStartNewGameButton();
+    } else {
+        deactivateStartNewGameButton();
+    }
 });
 socket.on('setResult', ({ success, message }) => {
     console.log('setResult received:', success, message);
@@ -119,6 +104,19 @@ socket.on('addCardsRejected', () => {
     isVoteOngoing = false;
     hasVoted = false;
     addCardsVoteModal.style.display = 'none';
+});
+
+socket.on('gameOver', ({ winners, message }) => {
+    alert(message);
+
+    console.log('Game ended! Winners:', winners);
+});
+
+socket.on('startNewGameRequestEnabled', () => {
+    activateStartNewGameButton();
+});
+socket.on('startNewGameRequestDisabled', () => {
+    deactivateStartNewGameButton();
 });
 
 // === Initialization ===
@@ -227,34 +225,14 @@ function deactivateAddCardsButton() {
     addCardsButton.classList.add('inactive');
 }
 
-function addThreeCardsToBoard() {
-    if (deck.length === 0) return;
-    const cardsToAdd = deck.splice(0, 3);
+function activateStartNewGameButton() {
+    startNewGameBtn.classList.remove('inactive');
+    startNewGameBtn.classList.add('active');
+}
 
-    const currentChildren = Array.from(cardsContainer.children);
-    const columns = currentColumns; // use the actual current column count
-    const rows = Math.ceil(cardsInPlay.length / columns);
-
-    cardsToAdd.forEach((card, i) => {
-        const row = i;
-        const insertIndex = Math.min((row + 1) * columns + i, currentChildren.length);
-
-        cardsInPlay.splice(insertIndex, 0, card);
-
-        const cardEl = document.createElement('li');
-        cardEl.className = 'card';
-        cardEl.dataset.cardId = card.id;
-        cardEl.innerHTML = `<img src="/img/cards/${card.id}-${card.count}-${card.color}-${card.shading}-${card.shape}.jpg" />`;
-
-        if (insertIndex >= currentChildren.length) {
-            cardsContainer.appendChild(cardEl);
-        } else {
-            cardsContainer.insertBefore(cardEl, currentChildren[insertIndex]);
-        }
-    });
-
-    updateCardBoardLayout();
-    updateGridColumns();
+function deactivateStartNewGameButton() {
+    startNewGameBtn.classList.remove('active');
+    startNewGameBtn.classList.add('inactive');
 }
 
 function enterDoxMode() {
@@ -379,3 +357,7 @@ voteNoBtn.addEventListener('click', () => {
     voteStatus.textContent = 'You voted NO. Waiting for others...';
     hasVoted = true;
 });
+
+startNewGameBtn.addEventListener('click', () => {
+    socket.emit('requestNewGame');
+})
