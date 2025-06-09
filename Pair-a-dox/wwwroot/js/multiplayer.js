@@ -122,7 +122,6 @@ socket.on('startNewGameRequestDisabled', () => {
 // === Initialization ===
 document.addEventListener('DOMContentLoaded', () => {
     scoreBoard = document.getElementById('playerScore');
-    renderInitialCards();
     updateScoreBoard();
 });
 
@@ -132,13 +131,6 @@ function promptForName() {
         playerName = "Player";
     }
     playerName = playerName.trim();
-}
-
-function renderInitialCards() {
-    cardsInPlay = deck.splice(0, 12);
-    cardsContainer.innerHTML = '';
-    cardsInPlay.forEach(renderCard);
-    updateGridColumns();
 }
 
 function renderCard(card) {
