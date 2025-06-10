@@ -3,6 +3,8 @@ using System.Linq;
 using BCrypt.Net; 
 using System;
 using Pair_a_dox.Models;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace Pair_a_dox.Controllers
 {
@@ -45,23 +47,43 @@ namespace Pair_a_dox.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginUserDto dto)
+        public async Task<IActionResult> Login([FromBody] LoginUserDto dto)
         {
+            // Find user by email
             var user = _dbContext.Users.SingleOrDefault(u => u.Email == dto.Email);
             if (user == null)
             {
+                // User not found, return unauthorized
                 return Unauthorized("Invalid email or password.");
             }
 
+            // Verify password using BCrypt
             bool isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
             if (!isPasswordValid)
             {
+                // Password invalid, return unauthorized
                 return Unauthorized("Invalid email or password.");
             }
 
-            // Authentication successful
-            return Ok("Login successful.");
+            // At this point, authentication is successful.
+            // Create claims for the authenticated user
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Email, user.Email)
+            };
+
+            // Create identity and principal for cookie authentication
+            var identity = new ClaimsIdentity(claims, "CookieAuth");
+            var principal = new ClaimsPrincipal(identity);
+
+            // Sign in user with cookie authentication
+            await HttpContext.SignInAsync("CookieAuth", principal);
+
+            // Return success message
+            return Ok("Login successful!");
         }
+
 
         [HttpGet("all")]
         public IActionResult GetAllUsers()
@@ -74,6 +96,14 @@ namespace Pair_a_dox.Controllers
 
             return Ok(users);
         }
+
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync("CookieAuth");
+            return Ok("Logged out!");
+        }
+
     }
 
 }

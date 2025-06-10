@@ -261,3 +261,14 @@ img {
 #voteButtons button {
     margin: 10px;
 }
+
+#user-status img {
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+#user-status img:hover {
+    transform: scale(1.1);
+}
