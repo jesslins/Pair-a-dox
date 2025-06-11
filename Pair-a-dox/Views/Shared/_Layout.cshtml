@@ -26,19 +26,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        @* <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Signup">Signup</a>
-                        </li> *@
                     </ul>
                 </div>
                 <div id="user-status" style="position: absolute; top: 1rem; right: 1rem;">
                     @if (User.Identity?.IsAuthenticated == true)
                     {
-                        <a href="/Account/Profile" title="Hello, @User.Identity.Name">
-                            <img src="~/img/user-loggedin.jpg" alt="Logged In" height="30" />
+                        <a asp-action="Profile" title="Hello, @User.Identity.Name">
+                            <img src="~/img/user-loggedin.png" alt="Logged In" height="30" />
                         </a>
                     }
                     else

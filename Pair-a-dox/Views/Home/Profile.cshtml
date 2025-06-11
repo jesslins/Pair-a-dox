@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Profile";
+}
+<h1><span id="pair">Pair</span><span id="a">-a-</span><span id="dox">dox</span></h1>
+<main>
+ <header>
+        <div class="container">
+            <h2>
+                @User.Identity.Name Profile!
+            </h2>
+            <hr />
+        </div>
+ </header>
+ <body>
+     <div class="container friends list">
+        <h3>Friends</h3>
+        @* wanted to make it possible to add friends*@
+     </div>
+ </body>
+
+  
+        
+    
+
+    <div class="container log out">
+        <!-- Button that calls logout function when clicked -->
+        <button onclick="logout()">Logout</button>
+        </div>
+
+
+    <script>
+        async function logout() {
+            // Send POST request to logout endpoint to remove auth cookie
+            const response = await fetch("/users/logout", {
+                method: "POST"
+            });
+
+            if (response.ok) {
+                alert("Logged out.");
+                // Redirect to login page after logout
+                window.location.href = "Index";
+            }
+        }
+    </script>
+
+</main>
