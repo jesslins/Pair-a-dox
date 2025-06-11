@@ -32,7 +32,7 @@
         </div>
 
         <div class="container login">
-            <p>Don't have an account? <a href="../Pair-a-dox/signup.html">Sign up</a>.</p>
+            <p>Don't have an account? <a asp-area="" asp-controller="Home" asp-action="Signup">Sign up</a>.</p>
         </div>
     </form>
 
@@ -60,7 +60,7 @@
                 if (response.ok) {
                     alert("You are logged in, get ready to dox!!");
                     // Redirect to the main application page
-                    window.location.href = "../Pair-a-dox/Pairadox.cshtml";
+                    window.location.href = "Index";
                 } else {
                     alert("Error: " + result);
                 }

@@ -16,7 +16,16 @@ namespace Pair_a_dox
             //to link the sqlite server shit
             builder.Services.AddDbContext<UserDbContext>(options =>
                 options.UseSqlite("Data Source=app.db"));
+            // Add authentication service using cookie-based scheme
+            builder.Services.AddAuthentication("CookieAuth")
+                .AddCookie("CookieAuth", options =>
+                {
+                    // Redirect users to login page if they try to access protected resources without being authenticated
+                    options.LoginPath = "/Login.html";
 
+                    // Name of the authentication cookie
+                    options.Cookie.Name = "PairADox.Auth";
+                });
 
 
             var app = builder.Build();

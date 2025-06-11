@@ -10,6 +10,11 @@
         Your Score:
         <span id="playerScore" class="score"></span>
     </div>
+    <div id="aiScoreContainer" style="display: none;">
+        AI Score:
+        <span id="aiScore" class="score"></span>
+    </div>  
+
 </section>
 <div class="main-container">
     <main id="main-layout">
@@ -27,6 +32,26 @@
     </main>
 </div>
 
+@* <form action="/action_page.php" target="">
+    <div class="container">
+        <h2>
+            Ai Difficulty
+        </h2>
+        <hr />
+        <label for="aiDifficulty">AI Difficulty:</label>
+        <select id="aiDifficulty" onchange="onDifficultyChange(this.value)">
+            <option value="none">None</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+
+    </div>
+
+</form> *@
+
 @section Scripts {
     <script src="~/js/singleplayer.js" asp-append-version="true"></script>
+    @* <script src="~/js/AiAlgorithm.js" asp-append-version="true"></script> *@
 }
