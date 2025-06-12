@@ -150,6 +150,7 @@ h1 #dox {
     -moz-border-radius: 10px;
     border-radius: 10px;
     font-size: 1.5rem;
+    border: 0;
 }
 
 .inactive {
@@ -237,6 +238,11 @@ img {
     border-radius: 5px;
 }
 
+#room .modal-content {
+    max-width: 80%;
+    height: 80%;
+}
+
 .modal {
     position: fixed;
     left: 0;
@@ -256,6 +262,28 @@ img {
     border-radius: 8px;
     max-width: 300px;
     text-align: center;
+}
+
+#playerList {
+    display: grid ;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.player {
+    background-color: lightgray;
+    display: flex;
+    padding: 1rem;
+    border-radius:5px;
+}
+
+.player p {
+   margin: 0;
+}
+
+#room .button {
+    margin-top: 6rem;
 }
 
 #voteButtons button {
