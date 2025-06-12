@@ -5,6 +5,49 @@
     ViewData["Title"] = "Play Pair-a-dox";
 }
 <h1><span id="pair">Pair</span><span id="a">-a-</span><span id="dox">dox</span></h1>
+
+<div id="multiplayerHomePage" class="modal">
+    <div class="modal-content">
+        <div id="voteButtons">
+            <button class="button active" id="makeRoomBtn">Make Room</button>
+            <button class="button active" id="joinRoomBtn">Join Room</button>
+        </div>
+    </div>
+</div>
+
+<div id="room" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h2>Name's Room</h2>
+        <div id="room-code-container">
+            Room Code:
+            <span id="roomCodeDisplay" class="score"></span>
+        </div>
+        <h3>Players:</h3>
+        <div id="playerList">
+            <div class="player">
+                <p>Name</p>
+            </div>
+            <div class="player">
+                <p>Name</p>
+            </div>
+            <div class="player">
+                <p>Name</p>
+            </div>
+            <div class="player">
+                <p>Name</p>
+            </div>
+            <div class="player">
+                <p>Name</p>
+            </div>
+            <div class="player">
+                <p>Name</p>
+            </div>
+        </div>
+        <div id="roomButtons">
+            <button id="startGameBtn" class="button active">Start Game</button>
+        </div>
+    </div>
+</div>
 <section class="scoreboard" id="scoreboard">
     <div id="player-score-container" class="score-container">
         Your Score:

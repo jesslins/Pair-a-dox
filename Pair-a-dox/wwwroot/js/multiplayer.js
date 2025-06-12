@@ -19,6 +19,11 @@ const voteNoBtn = document.getElementById('voteNo');
 const voteCancelBtn = document.getElementById('voteCancel');
 const voteStatus = document.getElementById('voteStatus');
 const startNewGameBtn = document.getElementById('startNewGameBtn');
+const multiplayerHomePage = document.getElementById('multiplayerHomePage');
+const roomModal = document.getElementById('room');
+const makeRoomBtn = document.getElementById('makeRoomBtn');
+const joinRoomBtn = document.getElementById('joinRoomBtn');
+const startGameBtn = document.getElementById('startGameBtn')
 const playerScores = {}
 let cardsInPlay = [];
 let selectedCards = [];
@@ -34,6 +39,7 @@ let pendingGameState = null;
 let hasVoted = false;
 let isVoteOngoing = false;
 let playerNames = {};
+let roomId = '';
 
 
 // === Socket Events ===
@@ -46,6 +52,66 @@ socket.on('connect', () => {
         pendingGameState = null;
     }
 });
+socket.on('roomCreated', ({ roomCode, players }) => {
+    console.log('room created!');
+    roomId = roomCode;
+    multiplayerHomePage.style.display = 'none';
+    roomModal.style.display = 'flex';
+
+    document.getElementById('roomCodeDisplay').textContent = roomCode;
+
+    const playerListContainer = document.getElementById('playerList');
+    playerListContainer.innerHTML = '';
+
+    players.forEach(({ socketId, playerName }) => {
+        const playerDiv = document.createElement('div');
+        playerDiv.className = 'player';
+        playerDiv.id = `player-${socketId}`;
+        playerDiv.innerHTML = `<p>${playerName}</p>`;
+        playerListContainer.appendChild(playerDiv);
+    });
+});
+socket.on('roomJoined', ({ roomCode, players }) => {
+    console.log('Successfully joined room:', roomCode);
+    multiplayerHomePage.style.display = 'none';
+    roomModal.style.display = 'flex';
+
+    document.getElementById('roomCodeDisplay').textContent = roomCode;
+
+    const playerListContainer = document.getElementById('playerList');
+    playerListContainer.innerHTML = '';
+
+    players.forEach(({ socketId, playerName }) => {
+        const playerDiv = document.createElement('div');
+        playerDiv.className = 'player';
+        playerDiv.id = `player-${socketId}`;
+        playerDiv.innerHTML = `<p>${playerName}</p>`;
+        playerListContainer.appendChild(playerDiv);
+    });
+});
+
+socket.on('joinFailed', (message) => {
+    alert(`Join failed: ${message}`);
+});
+
+socket.on('playerJoined', ({ playerName, socketId }) => {
+    const playerListContainer = document.getElementById('playerList');
+
+    // Avoid duplicate entries
+    if (document.getElementById(`player-${socketId}`)) return;
+
+    const playerDiv = document.createElement('div');
+    playerDiv.className = 'player';
+    playerDiv.id = `player-${socketId}`;
+    playerDiv.innerHTML = `<p>${playerName}</p>`;
+    playerListContainer.appendChild(playerDiv);
+});
+
+
+socket.on('gameStarted', () => {
+    roomModal.style.display = 'none';
+})
+
 socket.on('gameState', (data) => {
     if (!socketIdReady) {
         pendingGameState = data;
@@ -117,6 +183,38 @@ socket.on('startNewGameRequestEnabled', () => {
 });
 socket.on('startNewGameRequestDisabled', () => {
     deactivateStartNewGameButton();
+});
+
+socket.on('playerEnteredDoxMode', (playerId) => {
+    if (playerId === socket.id) {
+        isDoxMode = true;
+        selectedCards = [];
+        updateCardSelectionUI();
+    }
+    doxButton.classList.add('inactive');
+    doxButton.classList.remove('active');
+});
+
+socket.on('playerExitedDoxMode', (playerId) => {
+    if (playerId === socket.id) {
+        isDoxMode = false;
+        selectedCards = [];
+        updateCardSelectionUI();
+    }
+    doxButton.classList.remove('inactive');
+    doxButton.classList.add('active');
+});
+
+socket.on('gameStarted', () => {
+    roomModal.style.display = 'none';
+});
+
+socket.on('roomFull', () => {
+    alert("This room is full. Maximum of 6 players allowed.");
+});
+
+socket.on('gameAlreadyStarted', () => {
+    alert("You can't join. The game has already started.");
 });
 
 // === Initialization ===
@@ -228,28 +326,11 @@ function deactivateStartNewGameButton() {
 }
 
 function enterDoxMode() {
-    if (isDoxMode) return;
-    isDoxMode = true;
-    selectedCards = [];
-    updateCardSelectionUI();
-    doxButton.classList.add('inactive');
-    doxButton.classList.remove('active');
-
-    clearTimeout(doxTimeout);
-    doxTimeout = setTimeout(() => {
-        exitDoxMode();
-        points--;
-        updateScoreBoard();
-    }, 10000);
+    socket.emit('enterDoxMode');
 }
 
 function exitDoxMode() {
-    isDoxMode = false;
-    selectedCards = [];
-    updateCardSelectionUI();
-    doxButton.classList.remove('inactive');
-    doxButton.classList.add('active');
-    clearTimeout(doxTimeout);
+    socket.emit('exitDoxMode');
 }
 
 function updateCardSelectionUI() {
@@ -279,7 +360,7 @@ function updateOrAddOpponentScore(socketId, score) {
     playerScores[socketId].innerText = score;
 }
 
-function handleGameState({ cardsInPlay: newCardsInPlay, pointsByPlayer }) {
+function handleGameState({ cardsInPlay: newCardsInPlay, pointsByPlayer, players }) {
     console.log('Handling game state update', newCardsInPlay, pointsByPlayer);
     cardsInPlay = newCardsInPlay;
     cardsContainer.innerHTML = '';
@@ -301,6 +382,16 @@ function handleGameState({ cardsInPlay: newCardsInPlay, pointsByPlayer }) {
             const container = playerScores[socketId].parentElement;
             container.remove();
             delete playerScores[socketId];
+        }
+    }
+
+    for (const playerDiv of document.querySelectorAll('#playerList .player')) {
+        const divId = playerDiv.id;
+        if (divId?.startsWith('player-')) {
+            const socketId = divId.replace('player-', '');
+            if (!players.some(player => player.id === socketId)) {
+                playerDiv.remove();
+            }
         }
     }
 
@@ -352,4 +443,20 @@ voteNoBtn.addEventListener('click', () => {
 
 startNewGameBtn.addEventListener('click', () => {
     socket.emit('requestNewGame');
+});
+
+makeRoomBtn.addEventListener('click', () => {
+    console.log('attempting to create a room...');
+    socket.emit('createRoom');
+});
+
+joinRoomBtn.addEventListener('click', () => {
+    roomId = prompt("Please enter the room ID:");
+    if (roomId) {
+        socket.emit('joinRoom', roomId);
+    }   
 })
+
+startGameBtn.addEventListener('click', () => {
+    socket.emit('startGame', roomId);
+});
