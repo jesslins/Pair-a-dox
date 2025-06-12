@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Pair_a_dox</title>
-    <link runat="server" rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon" />
+     
     <link runat="server" rel="icon" href="~/img/favicon.ico" type="image/ico" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -26,13 +26,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Signup">Signup</a>
-                        </li>
                     </ul>
+                </div>
+                <div id="user-status" style="position: absolute; top: 1rem; right: 1rem;">
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a asp-action="Profile" title="Hello, @User.Identity.Name">
+                            <img src="~/img/user-loggedin.png" alt="Logged In" height="30" />
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-area="" asp-controller="Home" asp-action="Login" title="Not logged in - click to sign in">
+                            <img src="~/img/user-default.png" alt="Not Logged In" height="30" />
+                        </a>
+                    }
                 </div>
             </div>
         </nav>
